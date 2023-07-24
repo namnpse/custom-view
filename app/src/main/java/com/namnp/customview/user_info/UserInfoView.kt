@@ -54,7 +54,6 @@ class UserInfoView @JvmOverloads constructor(
                     println("username $username level $level logoRes $logoRes")
                     if(logoRes != -1) {
                         logo = AppCompatResources.getDrawable(context, logoRes)
-                        logoView.setImageDrawable(logo)
                     }
                 }finally {
                    recycle()

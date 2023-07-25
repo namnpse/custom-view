@@ -10,9 +10,29 @@
 
     <com.namnp.customview.emotional_face.EmotionalFaceView
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/emotionalFaceView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/emotionalFaceView1"
+        app:borderColor="@color/white"
+        app:eyesColor="@color/white"
+        app:faceColor="@color/teal_200"
+        app:mouthColor="@color/white"
+        app:state="happy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.namnp.customview.emotional_face.EmotionalFaceView
+        app:layout_constraintTop_toBottomOf="@id/emotionalFaceView1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/emotionalFaceView2"
+        app:borderColor="@color/black"
+        app:eyesColor="@color/black"
+        app:faceColor="@color/purple_500"
+        app:mouthColor="@color/black"
+        app:state="sad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

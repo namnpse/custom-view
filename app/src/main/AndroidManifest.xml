@@ -13,9 +13,12 @@
         android:theme="@style/Theme.CustomView"
         tools:targetApi="31">
         <activity
-            android:theme="@style/AppFullScreenTheme"
-            android:name=".user_info.CustomUserInfoActivity"
+            android:name=".emotional_face.EmotionalFaceActivity"
             android:exported="false" />
+        <activity
+            android:name=".user_info.CustomUserInfoActivity"
+            android:exported="false"
+            android:theme="@style/AppFullScreenTheme" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

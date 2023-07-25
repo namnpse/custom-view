@@ -7,33 +7,47 @@
     android:layout_height="match_parent"
     tools:context=".emotional_face.EmotionalFaceActivity">
 
-
     <com.namnp.customview.emotional_face.EmotionalFaceView
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/emotionalFaceView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/emotionalFaceView1"
+        android:layout_margin="24dp"
+        android:id="@+id/happyButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         app:borderColor="@color/white"
         app:eyesColor="@color/white"
         app:faceColor="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@id/sadButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:mouthColor="@color/white"
-        app:state="happy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        app:state="happy" />
 
     <com.namnp.customview.emotional_face.EmotionalFaceView
-        app:layout_constraintTop_toBottomOf="@id/emotionalFaceView1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/emotionalFaceView2"
+        android:layout_margin="24dp"
+        android:id="@+id/sadButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         app:borderColor="@color/black"
         app:eyesColor="@color/black"
         app:faceColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/happyButton"
+        app:layout_constraintTop_toTopOf="parent"
         app:mouthColor="@color/black"
-        app:state="sad"
+        app:state="sad" />
+
+    <com.namnp.customview.emotional_face.EmotionalFaceView
+        android:id="@+id/emotionalFaceView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:borderColor="@color/black"
+        app:eyesColor="@color/black"
+        app:faceColor="@color/purple_500"
+        android:layout_margin="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sadButton"
+        app:mouthColor="@color/black"
+        app:state="happy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

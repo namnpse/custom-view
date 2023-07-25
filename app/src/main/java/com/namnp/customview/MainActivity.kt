@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.namnp.customview.emotional_face.EmotionalFaceActivity
 import com.namnp.customview.ui.theme.CustomViewTheme
 import com.namnp.customview.user_info.CustomUserInfoActivity
 
@@ -20,7 +21,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             CustomViewTheme {
                 // A surface container using the 'background' color from the theme
-                Intent(this, CustomUserInfoActivity::class.java).also {
+//                Intent(this, CustomUserInfoActivity::class.java).also {
+//                    startActivity(it)
+//                }
+                Intent(this, EmotionalFaceActivity::class.java).also {
                     startActivity(it)
                 }
                 Surface(
